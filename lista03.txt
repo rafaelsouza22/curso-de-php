@@ -1,0 +1,24 @@
+Esta linha contém o valor: 12
+Esta linha contém o valor: 70
+Esta linha contém o valor: 24
+Esta linha contém o valor: 3
+
+Esta linha contém o valor: 10
+Esta linha contém o valor: 17
+Esta linha contém o valor: 77
+Esta linha contém o valor: 45
+Esta linha contém o valor: 85
+
+Esta linha contém o valor: 94
+Esta linha contém o valor: 81
+Esta linha contém o valor: 98
+Esta linha contém o valor: 84
+Esta linha contém o valor: 84
+
+Esta linha contém o valor: 78
+Esta linha contém o valor: 73
+Esta linha contém o valor: 27
+Esta linha contém o valor: 98
+Esta linha contém o valor: 49
+Esta linha contém o valor: 12
+1
