@@ -1,5 +1,29 @@
 <?php
 
+/** CRIANDO O BANCO DE DADOS
+ * 
+    create database crud_pdo;
+    use crud_pdo;
+    create table clientes(
+        id int primary key auto_increment,
+        nome varchar(60) 
+    );
+ */
+
+
+
+try {
+    $pdo = new PDO('mysql:host=127.0.0.1;dbname=crud_pdo', 'root', '') or die('erro no DB');
+    $dados = $pdo->query("SELECT * FROM clientes");
+    $clientes = $dados->fetchAll(PDO::FETCH_ASSOC);
+    if(count($clientes) > 0){
+        echo "<pre>";
+        print_r($clientes);
+        echo "</pre>";
+    }
+} catch (PDOException $e) {
+    throw $e;
+}
 
 
 
@@ -27,13 +51,20 @@
             background: #eee;
         }
 
-
+        .header{
+            height: 60px;
+            width: 100%;
+            padding: 10px;
+        }
+        .header h1{
+            text-align: center;
+        }
         .form_cadastro {}
 
         .form_cadastro form {}
 
         .form_cadastro form input {
-            padding: 5px ;
+            padding: 2px;
             margin: 10px 0px;
         }
 
@@ -45,7 +76,7 @@
 
 <body>
     <main>
-        <header>
+        <header class="header">
             <h1>CRUD</h1>
             <nav>
 
